@@ -83,7 +83,7 @@ jobs:
             # continue-on-error: true (so pipeline keeps running BUT IT IS NOT A BEST PRACTICE — ideally we would fail here and fix SAST issues before moving on to later gates)
             # Q: where do findings show up? (NOT GitHub Security tab — why?)
             - name: SonarQube Scan
-              uses: ???
+              uses: SonarSource/sonarqube-scan-action@v3.0.0
               continue-on-error: true
               env:
                   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
