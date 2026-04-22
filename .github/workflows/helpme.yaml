@@ -38,7 +38,7 @@ jobs:
               uses: trufflesecurity/trufflehog@main
               continue-on-error: true # NOTE THAT THIS IS NOT A BEST PRACTICE — ideally we would fail here and fix secrets before moving on to later gates, but for demo purposes we want to see results from all scanners.
               with:
-                path: ./
+                path: ./ 
                 # TODO#2: set base + HEAD refs so TruffleHog scans the commit diff
                 # base: ???
                 # head: ???
