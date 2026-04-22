@@ -87,6 +87,7 @@ jobs:
               continue-on-error: true
               env:
                   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+                  SONAR_HOST_URL: ${{secrets.SONAR_HOST_URL }}
 
     # GATE#1b: SAST via CodeQL (results in GitHub Security tab)
     codeql-scan:
@@ -141,7 +142,7 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@v4
               with:
-              node-version: 20
+                node-version: 20
 
             # TODO#11: install npm deps so Dependency-Check can resolve full tree
             #          Hint: `npm install` or `npm ci`
