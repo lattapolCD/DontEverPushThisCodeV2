@@ -40,7 +40,7 @@ jobs:
               with:
                 path: ./ 
                 # TODO#2: set base + HEAD refs so TruffleHog scans the commit diff
-                # base: ??? 
+                # base: ???    
                 # head: ???
                 # TODO#3: add extra_args flag to report ONLY VERIFIED secrets (reduce noise)
                 # extra_args: ???
